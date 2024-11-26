@@ -1,0 +1,142 @@
+.header{grid-area: header;}
+.nav{grid-area: nav;}
+.main{grid-area: main;}
+.footer{grid-area: footer;}
+
+body{
+    margin: 0%;
+}
+
+.gridcontainer{
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'nav main main'
+    'footer footer footer';
+    padding: 0%;
+}
+
+.nav{
+    background-color: lightskyblue;
+}
+
+.main{
+
+    padding: 10px;
+    background-color: white;
+}
+
+.header{    
+    text-align: center;
+    background-color: cornflowerblue;
+
+}
+
+.footer{
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+h3{
+    color: cornflowerblue;
+}
+
+nav li{
+    background-color: pink;
+    padding: 0.5em 4.5em 0.5em 1.25em;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+}
+
+nav ul{ 
+    list-style: none;
+    padding-left: 0%;
+    position:relative;
+    top: -15px;
+    
+}
+
+img{
+    max-width: 35%;
+    float:right;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+
+}
+
+p{
+    padding-bottom: 5%;
+}
+
+    @media only screen and (min-width:651px) and (max-width:1200px) {
+        
+        .gridcontainer{
+            display: grid;
+            grid-template-areas:
+            'header header header'
+            'nav nav nav'
+            'main main main'
+            'footer footer footer';
+            padding: 0%;
+        }   
+
+        .nav{
+            padding-top: 5%;
+        }
+
+        nav li{
+            background-color: pink;
+            padding: 0.5em 5em 0.5em 1.25em;
+            text-align: center;
+            border-style: solid;
+            border-color: white;
+
+        
+        }
+
+    }
+
+    @media only screen and (max-width:650px) {
+        
+        .gridcontainer{
+            display: grid;
+            grid-template-areas:
+            'header header header'
+            'nav nav nav'
+            'main main main'
+            'footer footer footer';
+            padding: 0%;
+        }   
+
+        .nav{
+            padding-top: 5%;
+        }
+
+        nav li{
+            background-color: pink;
+            padding: 0.5em 5em 0.5em 1.25em;
+            border-style: solid;
+            border-color: white;
+
+        
+        }
+
+        img{
+            max-width: 35%;
+            float:none;
+        }
+
+        .main{
+            padding: 5px;
+        }
+
+    }
