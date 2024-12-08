@@ -3,14 +3,74 @@
 <html lang="en">
 
     <head>
-        
+        <!-- Name: Eric Horniblow -->
+        <!-- ID: N01677339        -->
+
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
-        <title></title>
+        <title>Reservation</title>
 
     </head>
 
     <body>
+
+        <h2>Reservation Request</h2>
+
+        <form>
+
+            <h5>General Information</h5>
+
+            <label for="arrival">Arrival Date:</label>
+            <input type="text" id="arrival" name="taxable">
+            <br>
+            <label for="nights">Nights:</label>
+            <input type="number" id="nights" name="nights">
+            <br>
+            <label for="adults">Adults:</label>
+            <input type="number" id="adults" name="adults" min="1" max="6">
+            <br>
+            <label for="children">Children:</label>
+            <input type="number" id="children" name="children" min="0" max="6">
+            <br>
+            <h5>Preferences</h5>
+            <span>Room Type:&nbsp;&nbsp;</span>
+
+            <input type="radio" id="standard" name="roomType" value="Standard">
+            <label for="standard">Standard</label>
+
+            <input type="radio" id="business" name="roomType" value="Business"> 
+            <label for="business">Business</label>
+
+            <input type="radio" id="suite" name="roomType" value="Suite">
+            <label for="suite">Suite</label> <br>
+            <span>Bed Type:&nbsp;&nbsp;</span>
+
+            <input type="radio" id="king" name="bedType" value="King">
+            <label for="king">King</label>
+
+            <input type="radio" id="double" name="bedType" value="Double Double"> 
+            <label for="double">Double Double</label><br>
+
+            <input type="checkbox" id="smoking" name="smoking" value="Smoking"> 
+            <label for="smoking">Smoking</label>
+
+
+            <h5>Contact Information</h5>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone">
+            <br>
+
+            <input id="submit" type="submit" value="Submit Request"> <br>
+
+
+        </form>
     <script src="js/script.js"></script>
     </body>
 

@@ -3,11 +3,14 @@
 <html lang="en">
 
     <head>
-        
+        <!-- Name: Eric Horniblow -->
+        <!-- ID: N01677339        -->
+
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
 
-        <title></title>
+
+        <title>Sales Tax Calculator</title>
 
     </head>
 
@@ -18,19 +21,25 @@
             <h4>Please enter your subtotal and tax rate, then click calculate.</h4>
 
             <label for="subtotal">Subtotal:</label>
-            <input type="text" id="subtotal" name="subtotal"> <br>
+            <input type="number" id="subtotal" name="subtotal"> <br>
             <label for="taxRate">Tax Rate:</label>
-            <input type="text" id="taxRate" name="taxRate"> <br>
+            <input type="number" id="taxrate" name="taxRate"> <br>
 
             <label for="salesTax">Sales Tax:</label>
-            <output id="salesTax" name="salesTax"></output> <br>
+            <output id="salesTax" value="0" name="salesTax"></output> <br>
             <label for="total">Total:</label>
-            <output id="total" name="total"></output> <br>
+            <output id="total" value="0" name="total"></output> <br>
+
+            <input id="calculate" type="button" value="Calculate">
+            <input id="clear" type="button" value="Clear">
 
         </form>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+        <script src="js/script.js"></script>
 
-    <script src="js/script.js"></script>
+
     </body>
 
 </html>
